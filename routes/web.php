@@ -10,7 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// use App\Http\Controllers\CategoryController;
 
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('categories', 'CategoryController@index');
